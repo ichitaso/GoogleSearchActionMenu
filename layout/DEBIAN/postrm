@@ -1,0 +1,13 @@
+#!/bin/sh
+
+declare -a cydia
+cydia=($CYDIA)
+if [[ ${CYDIA+@} ]]; then
+	if [[ ${cydia[1]} -lt 1 ]]; then
+		echo 'PLEASE RESTART CYDIA!'
+	else
+		eval "echo 'finish:restart' >&${cydia[0]}"
+	fi
+fi
+
+exit 0

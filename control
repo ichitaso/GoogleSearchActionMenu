@@ -1,0 +1,8 @@
+Package: com.ichitaso.googleactionmenu
+Name: GoogleSearchActionMenu
+Version: 1.0
+Depends: firmware (>= 4.0), actionmenu
+Description: Search on Google via ActionMenu.
+Author: ichitaso
+Section: Addons
+Architecture: iphoneos-arm
