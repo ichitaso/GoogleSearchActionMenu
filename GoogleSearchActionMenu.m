@@ -2,11 +2,20 @@
 #import <UIKit/UIKit.h>
 #import "ActionMenu.h"
 
+@interface WKContentView : UIView
+- (NSString *)selectedText;
+@end
+
 @implementation UIResponder (GoogleAction)
 
 - (void)doGoogleSearch:(id)sender
 {
     NSString *selection = [self selectedTextualRepresentation];
+
+    if (selection == nil && [self respondsToSelector:@selector(selectedText)]) { //Webkit
+        //better method : [self isKindOfClass:[WKContentView class], but I have symbol error (´・ω・｀)
+        selection = [self selectedText];
+    }
     
     NSString *text = @"";
     if ([selection length] > 0) {

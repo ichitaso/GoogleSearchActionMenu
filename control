@@ -1,8 +1,15 @@
-Package: com.ichitaso.googleactionmenu
+Author: ichitaso <willfeeltips+gsam@gmail.com>
+Maintainer: BigBoss <bigboss@thebigboss.org>
 Name: GoogleSearchActionMenu
-Version: 1.0
+Package: com.ichitaso.googleactionmenu
 Depends: firmware (>= 4.0), actionmenu
-Description: Search on Google via ActionMenu.
-Author: ichitaso
-Section: Addons
+Section: Addons (Action Menu)
+Version: 1.0-1
 Architecture: iphoneos-arm
+Description: Search on Google via ActionMenu
+Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=googlesearchactionmenuDp
+Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=googlesearchactionmenuDp
+Sponsor: thebigboss.org <http://thebigboss.org>
+dev: ichitaso
+Tag: purpose::extension, ios7support::1, ios8support::1
+Icon: file:///Library/ActionMenu/Plugins/GoogleSearchActionMenu@2x.png
