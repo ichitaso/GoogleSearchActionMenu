@@ -38,7 +38,7 @@
 {
 	id <AMMenuItem> menuItem = [[UIMenuController sharedMenuController]
                                 registerAction:@selector(doGoogleSearch:)
-                                title:@"GoogleSearch"
+                                title:@"Google"
                                 canPerform:@selector(canGoogleSearch:)];
     
     menuItem.priority = 1000;
